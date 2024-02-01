@@ -2,7 +2,7 @@
 
 ### Simple R Code that covers basic R programming topics such as: operations, data types, data frames, lists, functions, datasets, vectors, matrices, built-in functions, and visualizations.
 
-*This is practice R code from a class assignment.*
+*This code is practice from a class assignment.*
 
 The script is organized into sections with explanations and examples for each topic. It includes installation and loading of necessary packages such as 'datasets' and 'tidyverse'. The script then proceeds to demonstrate operations, creating data frames and lists, defining functions, utilizing built-in datasets, working with vectors and matrices, using built-in functions, and generating visualizations like bar charts.
 
