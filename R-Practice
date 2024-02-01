@@ -1,0 +1,79 @@
+# R Basics Script Practice  
+# Author: Belanna Torres
+# Created: January 11, 2024
+
+# Simple R Code that covers basic R programming topics such as:
+# operations, data types, data frames, lists, functions, datasets, 
+# vectors, matrices, built-in functions, and visualizations.
+#-----------------------------------------------------------
+
+# Install packages 
+install.packages("datasets")
+install.packages("tidyverse")
+
+# Load packages 
+library(datasets)
+library(tidyverse)
+#-----------------------------------------------------------
+
+# Operations and Data Types
+a <- 5
+b <- 3
+
+sum_result <- a + b
+print(paste("Sum:", sum_result))
+
+# Data Frames and Lists
+#-----------------------------------------------------------
+# Creating a data frame
+df <- data.frame(
+  Name = c("Belanna", "John", "Jane"),
+  Age = c(25, 30, 22),
+  Grade = c("A", "B", "C")
+)
+df
+
+# Creating a list
+my_list <- list(
+  Numbers = c(1, 2, 3),
+  Colors = c("Red", "Green", "Blue")
+)
+my_list
+
+# Functions
+#-----------------------------------------------------------
+# Function to calculate the square of a number
+square <- function(x) {
+  return(x^2)
+}
+
+result_square <- square(4)
+print(paste("Square:", result_square))
+
+# Datasets
+#-----------------------------------------------------------
+# Using a built-in dataset
+data()
+data(women)
+head(women)
+
+# Vectors and Matrices
+#-----------------------------------------------------------
+# Creating a vector
+my_vector <- c(10, 20, 30)
+my_vector
+
+# Creating a matrix
+my_matrix <- matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3)
+my_matrix
+
+# Built-in Functions
+#-----------------------------------------------------------
+# Using built-in functions
+mean_value <- mean(my_vector)
+print(paste("Mean:", mean_value))
+
+# Visualizations
+#-----------------------------------------------------------
+# Plotting a simple bar chart
+barplot(my_vector, names.arg = c("A", "B", "C"), col = "skyblue", main = "Bar Chart")
